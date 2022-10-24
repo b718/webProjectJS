@@ -25,13 +25,10 @@ async function scrapeData(url) {
 
     //we need to find a way to count the occurences of a word!
     listItems.each((idx, el) => {
-      if ($(el).text().contains("hi")) {
+      if ($(el).text().includes("hi")) {
         x++;
       }
     });
-
-    // Logs countries array to the console
-    console.dir(countries);
 
     // Write countries array in countries.json file
 
